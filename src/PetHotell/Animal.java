@@ -17,14 +17,12 @@ public class Animal {
     private double weight;
     private PetFood foodSort;
 
-
     //Konstruktor
     Animal(String name, double weight, PetFood foodSort) {
         this.name = name;
         this.weight = weight * 1000; //Konvertera kg till gram
         this.foodSort = foodSort;
     }
-
 
     public String getName() {
         return name;
