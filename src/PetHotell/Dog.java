@@ -27,7 +27,7 @@ public class Dog extends Animal implements IFood {
      */
     @Override
     public double calculateFood() {
-        return getWeight() / 100;
+        return getWeight() / PetFood.DOGFOOD.foodQuantity;
     }
 
 }

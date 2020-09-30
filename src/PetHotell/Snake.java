@@ -27,7 +27,7 @@ public class Snake extends Animal implements IFood {
      */
     @Override
     public double calculateFood() {
-        return 20;
+        return PetFood.SNAKEFOOD.foodQuantity;
     }
 
 }

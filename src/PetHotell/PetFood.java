@@ -14,15 +14,17 @@ package PetHotell;
  */
 public enum PetFood {
     // Associera värden till uppräkningskonstanterna
-    DOGFOOD("hundfoder"),
-    CATFOOD("kattfoder"),
-    SNAKEFOOD("ormpellets");
+    DOGFOOD("hundfoder", 100),
+    CATFOOD("kattfoder", 150),
+    SNAKEFOOD("ormpellets", 20);
 
-    //Konstant instansvariabel
+    //Konstant instansvariabler
     protected final String foodSort;
+    protected final Integer foodQuantity;
 
     //Konstruktor som skapar upp instanser av dem uppräkningstyperna
-    PetFood(String name) {
-        foodSort = name;
+    PetFood(String foodSort, Integer foodQuantity) {
+        this.foodSort = foodSort;
+        this.foodQuantity = foodQuantity;
     }
 }

@@ -27,7 +27,7 @@ public class Cat extends Animal implements IFood{
      */
     @Override
     public double calculateFood() {
-        return getWeight() / 150;
+        return getWeight() / PetFood.CATFOOD.foodQuantity;
     }
 
 
